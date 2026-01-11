@@ -6,7 +6,7 @@ conn = st.connection("gsheets", type=GSheetsConnection)
 WORKSHEET = "Translations"
 df = conn.read(worksheet=WORKSHEET, ttl=0)
 
-st.title("➕ Add New Translation")
+st.title("➕ Add New Languages Name")
 
 with st.form("add_translation_form"):
     new_nepali = st.text_input("Nepali Word/Phrase*", help="This is the base entry")
